@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@300&family=Barlow+Semi+Condensed:wght@200&family=Changa&family=Cormorant&display=swap');
+
+*,::before,::after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+}
+
+hr{
+    border: 0.3px solid rgb(210, 213, 221);
+    border-color: rgb(223, 224, 231);
+    filter: blur(10px);
+}
+
+header {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 5px 15px 0 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(231, 234, 240, 0.5);
+    border-bottom: 2px solid rgb(168, 196, 255);
+}
+
+.navigation{
+    list-style: none;
+    padding-right: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1em;
+    color: rgb(1, 0, 14);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+}
+
+#header-img{
+    width: 200px;
+}
+
+.first-section{
+    margin-top: 120px;
+}
+
+.section{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tagline{
+    color: rgb(14, 19, 31);
+    text-align: center;
+    font-family: 'Changa', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.subtitle{
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    margin-top: -15px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: rgb(138, 138, 138);
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.form{
+    padding: 25px;
+    text-align: center;
+}
+
+#email {
+    background-color: rgba(241, 241, 241, 0.5);
+    border: 2px solid rgb(168, 196, 255);
+    border-radius: 3px;
+    width: 30%;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: rgb(0, 16, 17);
+    height: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#email::placeholder {
+    color: rgb(110, 110, 110);
+}
+
+#submit{
+    background-color: rgb(202, 212, 233);
+    border: 2px solid rgba(214, 213, 213, 0.5);
+    border-radius: 3px;
+    width: 10%;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(7, 24, 26);
+    height: 40px;
+}
+
+#submit:hover{
+    padding: 2px;
+    border: 2px solid rgba(14, 14, 27, 0.5);
+    box-shadow: 0px 0px 3px 3px rgba(14, 9, 37, 0.1);
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    left: 0;
+    align-items: center;
+    justify-content: left;
+    gap: 16px;
+}
+
+.feature{
+    padding: 2px;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.2em;
+    color: rgb(23, 16, 31);
+    font-weight: 600;
+}
+
+.explain{
+    padding:0px;
+    font-family: 'Cormorant', serif;
+    color: rgb(44, 44, 44);
+    font-weight: none;
+    letter-spacing: 0.03em;
+    line-height: 1.1em;
+}
+
+.image{
+    width: 70px;
+}
+
+#Features{
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60vh;
+}
+  
+iframe {
+    border: 3px solid rgb(168, 196, 255);
+    border-radius: 5px;
+    width: 560px;
+    height: 315px;
+}
+
+.team-name{
+    background-color: rgba(212, 214, 218, 0.5);
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100%;
+    height:fit-content;
+}
+
+.team{
+    font-family: 'Asap Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+    align-items: center;
+    text-align: center;
+}
+
+.description{
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    padding-top: 5px;
+    letter-spacing: 0.05em;
+    padding-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.kit-description{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 0.8em;
+    margin-top: -5px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-family: 'Cormorant', serif;
+    color: rgb(99, 99, 99);
+    font-weight: bold;
+}
+
+.price{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(241, 241, 241);
+}
+
+.em{
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.jersey{
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+#Explore{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.pricing {
+    width: 100%;
+    max-width: 290px;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 50px 50px 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+    border: 2px solid rgb(137, 174, 255);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    max-height: 75px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+    background-color: rgb(238, 238, 238);
+}
+
+.links {
+    padding-top: 25px;
+    padding-right: 20px;
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(1, 0, 14);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+@media (max-width: 800px){
+    #header-img{
+        width: 150px;
+        margin-left: -5px;
+    }
+
+    header{
+        min-height: 60px;
+        border-bottom: 1px solid rgb(168, 196, 255);
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .nav-link, .link{
+        font-size: 0.6em;
+    }
+
+    .navigation{
+        padding-left: 100px;
+        gap: 10px;
+    }
+
+    .links{
+        padding-right: 130px;
+        gap: 15px;
+    }
+
+    .tagline{
+        margin-top: -20px;
+        font-size: 1.3em;
+    }
+
+    .subtitle{
+        margin-top: -10px;
+        align-items: center;
+        font-size: 0.6em;
+        margin-bottom: -5px;
+    }
+
+    #email{
+        height: 20px;
+        font-size: 0.5em;
+        width: 35%;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border: 1px solid rgb(168, 196, 255);
+        margin-bottom: 5px;
+    }
+
+    #submit{
+        width: 10%;
+        text-align: center;
+        align-items: center;
+        height: 15px;
+        padding: 0px;
+        margin-bottom: -10px;
+        font-size: 0.2em;
+        border-radius: 1px;
+        border: 1px solid rgba(214, 213, 213, 0.5);
+    }
+    #submit:hover{
+        padding: 0.5px;
+        border: 1px solid rgba(14, 14, 27, 0.5);
+        box-shadow: 0px 0px 1px 1px rgba(14, 9, 37, 0.1);
+    }
+    .feature{
+        margin-top: -20px;
+        font-size: 0.6em;
+        margin-bottom: -10px;
+    }
+    .image{
+        width: 35px;
+    }
+    .features{
+        padding: 10px;
+    }
+    #Features{
+        width: 90%;
+    }
+    .iframe-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height:40vh;
+    }
+      
+    iframe {
+        border: 2px solid rgb(168, 196, 255);
+        border-radius: 3px;
+        width: 330px;
+        height: 185px;
+    }
+
+    .team-name{
+        margin-top: -5px;
+        border-radius: 3px;
+    }
+
+    .team{
+        font-size: 1em;
+    }
+
+    .description, .kit-description{
+        font-size: 0.8em;
+    }
+
+    .price{
+        margin-bottom: -5px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 420px){
+    #header-img{
+        width: 100px;
+        margin-left: -10px;
+    }
+
+    header{
+        min-height: 50px;
+        border-bottom: 0.5px solid rgb(168, 196, 255);
+    }
+
+    .nav-link, .link{
+        font-size: 0.5em;
+    }
+
+    .links{
+        padding-right: 115px;
+        gap: 13px;
+    }
+
+    .navigation{
+        padding-left: 120px;
+        padding-bottom: 5px;
+        gap: 10px;
+    }
+
+    .tagline{
+        margin-top: -40px;
+        font-size: 1.2em;
+    }
+
+    .subtitle{
+        margin-top: -7px;
+        font-size: 0.6em;
+        margin-bottom: -5px;
+    }
+
+    #email{
+        height: 20px;
+        font-size: 0.4em;
+        width: 35%;
+        text-align: center;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border: 1px solid rgb(168, 196, 255);
+        margin-bottom: 5px;
+    }
+
+    #submit{
+        width: 15%;
+        text-align: center;
+        align-items: center;
+        height: 15px;
+        padding: 0 px;
+        margin-bottom: -10px;
+        font-size: 0.2em;
+        border-radius: 1px;
+        border: 1px solid rgba(214, 213, 213, 0.5);
+    }
+    #submit:hover{
+        padding: 0.5px;
+        border: 1px solid rgba(14, 14, 27, 0.5);
+        box-shadow: 0px 0px 1px 1px rgba(14, 9, 37, 0.1);
+    }
+    .features{
+        margin-top: -20px;
+        padding-bottom: 30px;
+    }
+    .feature{
+        margin-top: -7px;
+        font-size: 0.5em;
+        margin-bottom: -7px;
+    }
+    .iframe-container {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        height:20vh;
+    }
+      
+    iframe {
+        border: 1px solid rgb(168, 196, 255);
+        border-radius: 2px;
+        width: 260px;
+        height: 145px;
+    }
+
+    .pricing {
+        width: 80%;
+        max-width: 220px;
+        max-height: 60%;
+        object-fit: cover;
+        margin: 0 50px 50px 50px;
+        padding: 10px;
+        border-radius: 2px;
+        background-color: rgb(238, 238, 238);
+        border: 1px solid rgb(137, 174, 255);
+    }
+    
+    .team-name{
+        margin-top: -5px;
+        border-radius: 3px;
+    }
+
+    .team{
+        font-size: 0.8em;;
+    }
+
+    .description, .kit-description{
+        font-size: 0.5em;
+    }
+
+    .price{
+        margin-bottom: -5px;
+        font-size: 0.5em;
+    }
+}
