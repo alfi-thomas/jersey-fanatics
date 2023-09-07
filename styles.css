@@ -10,12 +10,6 @@ body{
     background-color: rgb(250, 250, 250);
 }
 
-hr{
-    border: 0.3px solid rgb(210, 213, 221);
-    border-color: rgb(223, 224, 231);
-    filter: blur(10px);
-}
-
 header {
     backdrop-filter: blur(10px);
     position: fixed;
